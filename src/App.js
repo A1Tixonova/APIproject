@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Header from "./bsStyle/Header";
+import Menu from "./bsStyle/Menu";
+import TextTest from "./bsStyle/TextTest";
 
-function App() {
+let rootStyle = {
+  height: "100%",
+  minHeight: "100vh",
+  backgroundColor: "rgba(42, 43, 50, 1)",
+};
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={rootStyle}>
+      <Header />
+      <Menu />
+      <TextTest />
     </div>
   );
-}
+};
 
 export default App;
