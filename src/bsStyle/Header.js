@@ -1,38 +1,50 @@
 import React from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
-import { Link, NavLink } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import FirstText from "./FirstText";
+import SecondText from "./SecondText";
 
 const Header = () => {
   return (
-    <div>
-      <Navbar
-        bg="dark"
-        variant="dark"
-        style={{ fontFamily: '"Lato", sans-serif' }}
-      >
-        <Container>
-          <Navbar.Brand as={Link} to="/" style={{ marginLeft: "-270px" }}>
-            APIproject
-          </Navbar.Brand>
-          <Nav
-            className="me-auto"
-            style={{
-              display: "grid",
-              textAlign: "center",
-              gridTemplateColumns: "100px 100px 100px 100px 100px",
-            }}
-          >
-            <Nav.Link as={NavLink} to="/">
-              First
-            </Nav.Link>
-            <Nav.Link>Second</Nav.Link>
-            <Nav.Link>Third</Nav.Link>
-            <Nav.Link>Fourth</Nav.Link>
-            <Nav.Link>Fivth</Nav.Link>
-          </Nav>
-        </Container>
-      </Navbar>
-    </div>
+    <Router>
+      <div>
+        <Navbar
+          bg="dark"
+          variant="dark"
+          style={{ fontFamily: '"Lato", sans-serif' }}
+        >
+          <Container>
+            <Navbar.Brand style={{ marginLeft: "-270px" }}>
+              APIproject
+            </Navbar.Brand>
+            <Nav
+              className="me-auto"
+              style={{
+                display: "grid",
+                textAlign: "center",
+                gridTemplateColumns: "100px 100px 100px 100px 100px",
+              }}
+            >
+              <Nav.Link as={Link} to="/First">
+                First
+              </Nav.Link>
+              <Nav.Link as={Link} to="/Second">
+                Second
+              </Nav.Link>
+              <Nav.Link as={Link} to="/Third">
+                Third
+              </Nav.Link>
+              <Nav.Link as={Link} to="/Fourth">
+                Fourth
+              </Nav.Link>
+              <Nav.Link as={Link} to="/Fivth">
+                Fivth
+              </Nav.Link>
+            </Nav>
+          </Container>
+        </Navbar>
+      </div>
+    </Router>
   );
 };
 
