@@ -1,0 +1,11 @@
+.main-background {
+  height: 90vh;
+  width: 180vh;
+  background-color: chocolate;
+  border-radius: 5%;
+}
+
+.text-content {
+  text-align: center;
+  /* word-break: break-all; чтобы текст не вылезал за пределы дива*/
+}
