@@ -7,5 +7,6 @@
 
 .text-content {
   text-align: center;
+  color: black;
   /* word-break: break-all; чтобы текст не вылезал за пределы дива*/
 }

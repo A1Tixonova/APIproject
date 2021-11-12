@@ -1,12 +1,12 @@
 import React from 'react';
+import Quotes from '../../apiComponents/randomQuote/Quotes';
 import './bgpages.css';
 
 const ContentPage1 = () => {
   return (
     <div className={'main-background'}>
       <div className={'text-content'}>
-        <h1>ContentPage1</h1>
-        <h2></h2>
+        <Quotes />
       </div>
     </div>
   );
