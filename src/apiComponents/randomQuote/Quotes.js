@@ -1,10 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Card, Button } from 'react-bootstrap';
+import axios from 'axios';
 import './quoteStyle.css';
 
 const Quotes = () => {
-  const [quote, setQuotes] = useState('');
-
+  const [quote, setQuotes] = useState({
+    author: '',
+    text: '',
+  });
   const getter = () => {
     fetch('https://type.fit/api/quotes')
       .then((res) => res.json())
@@ -13,7 +16,6 @@ const Quotes = () => {
         setQuotes(data[randomNum]);
       });
   };
-
   return (
     <div className="bg">
       <div>
