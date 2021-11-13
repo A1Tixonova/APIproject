@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 .navbar-container {
   display: flex;
@@ -6,7 +6,7 @@
   position: absolute;
   height: 94vh;
   width: 150px;
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
   background-color: black;
 }
 
@@ -29,5 +29,5 @@
 
 .text-style {
   font-size: 30px;
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
 }
