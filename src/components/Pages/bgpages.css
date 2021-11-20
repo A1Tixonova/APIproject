@@ -10,3 +10,7 @@
   color: black;
   /* word-break: break-all; чтобы текст не вылезал за пределы дива*/
 }
+
+.links-border {
+  border: 2px solid black;
+}
