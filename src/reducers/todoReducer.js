@@ -2,8 +2,7 @@ import React from 'react';
 import { ADD, DELETE, CHANGE, ERROR } from '../actions/types';
 
 const INITIAL_STATE = {
-  list: '',
-  errorMessage: '',
+  list: [],
 };
 
 export default function (state = INITIAL_STATE, action) {

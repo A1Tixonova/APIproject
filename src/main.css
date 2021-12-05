@@ -1,0 +1,11 @@
+@media screen and (max-height: 1200px) {
+  .main-background {
+    height: 90vh;
+  }
+}
+
+.mainStyle {
+  height: '100%';
+  min-height: '100vh';
+  background: 'rgba(42, 43, 50, 1)';
+}
