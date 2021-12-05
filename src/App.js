@@ -7,6 +7,7 @@ import {
 } from 'react-router-dom';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
+import todoReducer from './reducers/todoReducer';
 
 import Header from './bsStyle/Header';
 import Menu from './bsStyle/Menu';
@@ -19,7 +20,7 @@ let rootStyle = {
   backgroundColor: 'rgba(42, 43, 50, 1)',
 };
 
-const store = createStore();
+const store = createStore(todoReducer);
 
 const App = () => {
   return (

@@ -1,4 +1,5 @@
 import React from 'react';
+import ToDoList from '../../actions/ToDoList';
 import './bgpages.css';
 
 const ContentPage4 = () => {
@@ -6,7 +7,7 @@ const ContentPage4 = () => {
     <div className={'main-background'}>
       <div className={'text-content'}>
         <h1>ContentPage4</h1>
-        <h2></h2>
+        <ToDoList />
       </div>
     </div>
   );
