@@ -5,6 +5,8 @@ import {
   Routes,
   Switch,
 } from 'react-router-dom';
+import { createStore } from 'redux';
+import { Provider } from 'react-redux';
 
 import Header from './bsStyle/Header';
 import Menu from './bsStyle/Menu';
@@ -17,12 +19,16 @@ let rootStyle = {
   backgroundColor: 'rgba(42, 43, 50, 1)',
 };
 
+const store = createStore();
+
 const App = () => {
   return (
-    <div style={rootStyle}>
-      <Header />
-      <Menu />
-    </div>
+    <Provider store={store}>
+      <div style={rootStyle}>
+        <Header />
+        <Menu />
+      </div>
+    </Provider>
   );
 };
 
